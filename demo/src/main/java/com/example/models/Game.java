@@ -44,7 +44,7 @@ public class Game {
             // Pergunta ao jogador se deseja jogar novamente
             System.out.println("Do you want to play again? (yes/no)");
             String replayChoice = scanner.nextLine().toLowerCase();
-            keepPlaying = replayChoice.equals("yes");
+            keepPlaying = replayChoice.equals("yes") || replayChoice.equals("y");
         }
         System.out.println("Thanks for playing! Goodbye.");
     }
