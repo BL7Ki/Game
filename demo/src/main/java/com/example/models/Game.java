@@ -51,16 +51,22 @@ public class Game {
 
     // Método para retornar o nome completo da escolha
     private String getChoiceName(String choice) {
-        switch (choice) {
-            case "r":
-                return "ROCK";
-            case "p":
-                return "PAPER";
-            case "s":
-                return "SCISSORS";
-            default:
-                return "INVALID";
-        }
+        return switch (choice) {
+            case "r" -> "ROCK";
+            case "p" -> "PAPER";
+            case "s" -> "SCISSORS";
+            default -> "INVALID";
+        };
+        // switch (choice) {
+        //     case "r":
+        //         return "ROCK";
+        //     case "p":
+        //         return "PAPER";
+        //     case "s":
+        //         return "SCISSORS";
+        //     default:
+        //         return "INVALID";
+        // }
     }
 
     // Método para verificar se a escolha do jogador é válida
